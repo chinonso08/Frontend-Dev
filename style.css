@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif
+}
+
+body {
+    background-color: rgba(254, 252, 252, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    min-height: 80vh;
+}
+
+.container {
+    max-width: 900px;
+    border-radius: 5px;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 20px black;
+    
+}
+
+.sedan {
+    background-color: rgb(255, 68, 0);
+}
+.suv {
+    background-color: rgb(99, 99, 229);
+}
+.lux {
+    background-color: rgb(0, 0, 128);
+    
+}
+img {
+    width: 60px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100px;
+    background-color: white;
+    color: cadetblue;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+button:hover {
+    background-color: rgb(252, 225, 173);
+  }
+.card {
+    flex: 1;
+    padding: 50px 40px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+
+
+@media (max-width: 700px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .card {
+      text-align: center;
+    }
+  
+    img {
+      margin: 0 auto 20px;
+    }
+  
+    button {
+      width: 100%;
+      max-width: 100px;
+      margin: 0 auto;
+    }
+  }
